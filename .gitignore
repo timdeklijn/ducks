@@ -1,0 +1,6 @@
+venv/
+.DS_Store
+.envrc
+pyrightconfig.json
+datasets/
+*.pt

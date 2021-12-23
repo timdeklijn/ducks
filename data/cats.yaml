@@ -1,0 +1,6 @@
+path: datasets/cats
+train: .
+val: .
+
+nc: 1
+names: [ 'cat' ]
