@@ -1,0 +1,7 @@
+---
+path: datasets/ducks
+train: .
+val: .
+
+nc: 1
+names: ['rubber duck']
