@@ -1,3 +1,6 @@
 [submodule "yolov5"]
 	path = yolov5
 	url = git@github.com:ultralytics/yolov5.git
+[submodule "cvat"]
+	path = cvat
+	url = git@github.com:openvinotoolkit/cvat.git
