@@ -2,6 +2,28 @@
 
 Object detection stuff to play around with some MLOps/CD4ML concepts.
 
+## CVAT
+
+To mount a local folder add the following to the CVAT directory.
+
+``` yml
+version: '3.3'
+
+services:
+  cvat:
+    environment:
+      CVAT_SHARE_URL: 'Mounted from /mnt/share host directory'
+    volumes:
+      - cvat_share:/home/django/share:ro
+
+volumes:
+  cvat_share:
+    driver_opts:
+      type: none
+      device: /mnt/share
+      o: bind
+```
+
 ## Data
 
 - Label data using [makesense.ai](www.makesense.ai)
